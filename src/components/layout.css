@@ -19,6 +19,9 @@ h1,h2,h3,h4,h5,h6 {
 .text-yellow{
   color:var(--mainYellow);
 }
+.text-black{
+  color:var(--mainDark);
+}
 .cart-icon{
   cursor: pointer;
   color: var(var(--mainYellow));
@@ -45,4 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .footer{
   background:var(--mainDark);
+}
+.menu{
+  background:var(--mainGrey);
 }
