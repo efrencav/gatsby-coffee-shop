@@ -12,22 +12,23 @@ export default class navbar extends Component {
                 id: 1,
                 path: '/',
                 text: 'home'
-            },{
+            }, {
                 id: 2,
                 path: '/about',
                 text: 'about'
             }
         ]
 
-}
+    }
     navbarHandler = () => {
-        this.state.navbarOpen?this.setState({
-            navbarOpen:false,
-            css:"collapse navbar-collapse"})
-        :this.setState({
-            navbarOpen:true,
-            css:'collapse navbar-collapse show'
+        this.state.navbarOpen ? this.setState({
+            navbarOpen: false,
+            css: "collapse navbar-collapse"
         })
+            : this.setState({
+                navbarOpen: true,
+                css: 'collapse navbar-collapse show'
+            })
     };
     render() {
         return <nav className="navbar navbar-expand-sm bg-light navbar-light">
@@ -41,7 +42,7 @@ export default class navbar extends Component {
             <div className={this.state.css}>
                 <ul className="navbar-nav mx-auto">
                     {
-                        this.state.links.map(link =>{
+                        this.state.links.map(link => {
                             return (
                                 <li key={link.id} className="nav-item">
                                     <Link to={link.path} className="nav-link text-capitalize">
@@ -52,7 +53,7 @@ export default class navbar extends Component {
                         })
                     }
                     <li className="nav-item ml-sm-5">
-                        <FaCartArrowDown className="cart-icon" />
+                        <FaCartArrowDown className="cart-icon snipcart-checkout" />
                     </li>
                 </ul>
 

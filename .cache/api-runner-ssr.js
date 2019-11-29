@@ -2,6 +2,9 @@ var plugins = [{
       plugin: require('/Users/efrencavazosimac/code/gatsby-coffee-shop/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/efrencavazosimac/code/gatsby-coffee-shop/node_modules/gatsby-plugin-snipcart/gatsby-ssr'),
+      options: {"plugins":[],"apiKey":"ZGFlNjI1NWEtMWYwMS00NGU2LTg5ODAtYjI1ZjgzNTI3ODBmNjM3MTA2MzI5NTE0ODU3MzU3","autopop":true},
+    },{
       plugin: require('/Users/efrencavazosimac/code/gatsby-coffee-shop/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/logo.svg"},
     }]
