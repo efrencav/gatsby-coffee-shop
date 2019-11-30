@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import "./bootstrap.min.css";
 import "./layout.css";
 
-import Navbar from './Globals/navbar';
+import Navbar from './Globals/Navbar';
 import Footer from './Globals/Footer';
 
 
